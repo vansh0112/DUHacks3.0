@@ -5,7 +5,6 @@ import { useDispatch, useSelector } from "react-redux";
 import Blockies from "react-blockies";
 import config from "../../config.json";
 
-
 const Navbar = () => {
   const dispatch = useDispatch();
   const provider = useSelector((state) => state.provider.connection);
@@ -32,7 +31,7 @@ const Navbar = () => {
     <div className="navbar bg-black text-white p-4 md:px-8 shadow-lg flex flex-col md:flex-row items-center justify-between">
       <div className="flex items-center space-x-4 mb-4 md:mb-0">
         <img src={healthReport} alt="Health Report" width="40" height="40" />
-        <h2 className="text-lg font-semibold">Medical Record</h2>
+        <h2 className="text-lg font-semibold">Medi Archive</h2>
       </div>
 
       <div className="flex flex-col md:flex-row items-center space-y-4 md:space-y-0 md:space-x-4">
@@ -55,7 +54,9 @@ const Navbar = () => {
             href="#"
             className="flex items-center text-sm font-semibold focus:outline-none focus:shadow-outline-blue"
           >
-            <span className="mr-2">{account.slice(0, 5) + "...." + account.slice(38, 42)}</span>
+            <span className="mr-2">
+              {account.slice(0, 5) + "...." + account.slice(38, 42)}
+            </span>
             <Blockies
               seed={account}
               size={10}
