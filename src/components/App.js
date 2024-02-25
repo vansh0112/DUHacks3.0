@@ -15,7 +15,8 @@ import {
 } from "../store/interactions";
 import config from "../config.json";
 import Alert from "./Alert/Alert";
-// import Login from "./Login";
+import Home from "./Home";
+
 function App() {
   const dispatch = useDispatch();
   const loadBlockchainData = async () => {
@@ -40,7 +41,7 @@ function App() {
       <div className="navbar">
         
         <Routes>
-        
+        <Route path = '/' exact element={<Home/>} />
         <Route path="/Form" exact element={<Form />} />
         <Route path="/Data" element={<Data />} />
         </Routes>
