@@ -1,0 +1,20 @@
+{
+  "1337": {
+    "medical": {
+      "address": "0x723Dca074913C0E505dF1aC78eb8638474F2480A"
+    },
+    "explorerURL": "http://127.0.0.1:7545"
+  },
+  "5": {
+    "medical": {
+      "address": "0x5DCBD97e64b867e1a85cDB9CA946faf8b67833c7"
+    },
+    "explorerURL": "https://goerli.etherscan.io/"
+  },
+  "80001": {
+    "medical": {
+      "address": "0x2d47967436b85633907da5299c461707F11bA562"
+    },
+    "explorerURL": "https://mumbai.polygonscan.com/"
+  }
+}
