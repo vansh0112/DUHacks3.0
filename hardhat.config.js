@@ -10,6 +10,9 @@ const goerliApiKey = process.env.GOERLI_API_KEY;
 module.exports = {
   solidity: "0.8.18",
   networks: {
+    localhost:{
+      url: "http://127.0.0.1:7545"
+    },
     mumbai: {
       url: API_URL,
       accounts: [`0x${PRIVATE_KEY}`]
